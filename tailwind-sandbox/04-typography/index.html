@@ -4,27 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+            fontFamily: {
+              'sans': ['ui-sans-serif', 'system-ui'],
+              'serif': ['Bricolage Grotesque', 'Georgia'],
+              'mono': ['ui-monospace', 'SFMono-Regular']
+          }
+        }
+      }
+    </script>
     <title>Typography</title>
   </head>
   <body>
     <!-- Font Family -->
-
-    <!-- Font Size -->
-
-    <!-- Font Weight -->
-
+  <div class="font-sans">
+    Tailwind is good css framework
+  </div>
+  <div class="font-serif text-indigo-400 font-extrabold">
+    Tailwind is good css framework
+  </div>
+  <!-- Font Size -->
+ <div class="text-xs">small text</div>
+<div class="text lg">Headline</div>
+<div class="text-3xl">Big healdine</div>
+<!-- Font Weight -->
+<div class="font-light">Light</div>
+<div class="font-extrabold">Extra bold</div>
     <!-- Letter Spacing -->
-
+<div class="tracking-tight">tight spacing</div>
+<div class="tracking-wide">wide spacing</div>
     <!-- Text Alignment -->
-
+<div class="text-left">Text left</div>
+<div class="text-center">text is in the center</div>
     <!-- Text Decoration -->
+<div class="underline decoration-4 decoration-blue-400">
+  Tailwind is awesome
+</div>
+<div class="underline decoration-wavy">  Tailwind is awesome
 
+</div>
     <!-- Decoration Style -->
 
     <!-- Decoration Offset -->
 
     <!-- Text Transform -->
+    <div class="normal-case">normal case</div>
+    <div class="uppercase">Said</div>
+    <div class="capitalize">Here it comes</div>
   </body>
 </html>
 
