@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Transform & Transition</title>
-  </head>
-  <body>
-    <!-- No Transition -->
-    <button
-      class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700"
-    >
-      Click me
-    </button>
 
-    <!-- Transition -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Transform & Transition</title>
+</head>
 
-    <!-- Transition & Transform -->
+<body>
+  <!-- No Transition -->
+  <button class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700">
+    Click me
+  </button>
 
-    <!-- Transform & Transition -->
-  </body>
+  <!-- Transition -->
+  <button class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700 transition duration-1000">
+    Click me
+  </button>
+  <!-- Transition & Transform -->
+  <button
+    class="px-8 py-2 m-24 text-white bg-blue-500 rounded ease-in hover:rotate-45 hover:bg-blue-700 transition-transform duration-1000">
+    Click me
+  </button>
+
+  <!-- Transform & Transition -->
+</body>
+
 </html>
 
 <!-- Transition Property
