@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Tilt Prism";
+  src: url("../assets/fonts/TiltPrism-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("../assets/fonts/Lora-Italic.ttf");
+}
+
+@font-face {
+  font-family: "LoraRegluar";
+  src: url("../assets/fonts/Lora-Regular.ttf");
+}
+
+@layer base {
+  body {
+    background-image: url("../assets/images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  h3 {
+    @apply font-Tilt mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl;
+  }
+  h5 {
+    @apply font-Lora text-xl mt-2 font-bold text-center text-darkGrayishBlue md:text-left;
+  }
+  p {
+    @apply font-LoraRegular max-w-3xl mx-auto text-xl leading-9 text-center text-grayishBlue;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-6xl mx-auto text-center px-10 pt-10;
+  }
+  .button-container {
+    @apply p-4 px-8 rounded-full shadow-lg duration-200 hover:opacity-80;
+  }
+}
